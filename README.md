@@ -1,2 +1,1 @@
-# tecweb2025
-Test di funzionalità di base
+Repository Git per laboratorio di Tecnologie Web 2025/26.
