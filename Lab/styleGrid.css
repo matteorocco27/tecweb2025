@@ -32,6 +32,7 @@ html{
     background-size: 5%, 5%, 5%, 100%;
 }
 
+
 body {
     background-color: var(--bgcolor);
     color: var(--txtcolor);
@@ -39,15 +40,18 @@ body {
     margin: auto;
 }
 
+
+
 body{
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas: 
-    "h h"
-    "b b"
-    "m c"
-    "f f";
+    "h h h"
+    "b b b"
+    "m c n"
+    "f f f";
 }
+
 
 /*
     ==============================
@@ -122,7 +126,6 @@ header h2 {
 */
 
 #menu {
-    width: 18%;
     padding: 0.8em;
     font-size: 1.3em;
     grid-area: m;
@@ -181,6 +184,7 @@ main h2 {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
 
 .polaroid {
     width: 30%;
@@ -263,10 +267,8 @@ dt.riconoscimenti {
 
 
 #breakingNews {
-    width: 18%;
     color: var(--txtcolor);
     background-color: var(--bgcolor);
-    border: solid #000 1px;
     padding: 0.5em;
     margin-right: 2%;
     margin-top: 1em;

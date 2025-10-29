@@ -171,8 +171,14 @@ main h2 {
     margin-bottom: 0.5em;
 }
 
+blockquote {
+    border: solid #000 2px;
+    margin: 2em;
+    padding: 2em;
+}
+
 .polaroid {
-    width: 30%;
+    width: 20%;
     float: right;
     background-color: white;
     padding: 0.5em;
