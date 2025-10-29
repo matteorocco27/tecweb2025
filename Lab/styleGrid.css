@@ -39,6 +39,16 @@ body {
     margin: auto;
 }
 
+body{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas: 
+    "h h"
+    "b b"
+    "m c"
+    "f f";
+}
+
 /*
     ==============================
     SEZIONE HEADER 
@@ -49,6 +59,7 @@ header {
     padding: 0em 1em;
     text-align: center;
     margin: 1em;
+    grid-area: h;
 }
 
 header h1 {
@@ -111,10 +122,10 @@ header h2 {
 */
 
 #menu {
-    float: left;
     width: 18%;
     padding: 0.8em;
     font-size: 1.3em;
+    grid-area: m;
 }
 
 #menu a:link{
@@ -148,7 +159,6 @@ header h2 {
 */
 
 main {
-    margin-left: 20%;
     background-color: var(--contentbgcolor);
     color: var(--contenttxtcolor);
     padding-top: 2em;
@@ -156,6 +166,7 @@ main {
     padding-left: 3.5em;
     padding-right: 2em;
     border-left: 1px solid #000;
+    grid-area: c;
 }
 
 main h1 {
@@ -250,8 +261,8 @@ dt.riconoscimenti {
     ==============================
 */
 
+
 #breakingNews {
-    float: right;
     width: 18%;
     color: var(--txtcolor);
     background-color: var(--bgcolor);
@@ -259,6 +270,7 @@ dt.riconoscimenti {
     padding: 0.5em;
     margin-right: 2%;
     margin-top: 1em;
+    grid-area: n;
 }
 
 #breakingNews h2 {
@@ -289,6 +301,7 @@ dt.riconoscimenti {
     font-size: 1.1em;
     border: 1px solid #000;
     padding: 0.5em 0em 0.5em 1.0em;
+    grid-area: b;
 }
 
 /*
@@ -304,6 +317,7 @@ footer {
     font-size: 0.8em;
     border: 1px solid #000;
     padding: 0.5em;
+    grid-area: f;
 }
 
 footer img {
